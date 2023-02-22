@@ -249,25 +249,24 @@ const WorkHistorySegment = () => (
       entries={[
         {
           date: {
-            from: '2022.09',
-            to: 'current'
+            from: '2022.03',
+            to: '2023.02'
           },
-          positions: ['Senior Frontend Engineer'],
-          company: 'BioWink GmbH',
+          positions: ['Senior Software Engineer'],
+          company: 'Media Company',
           projects: [{
-            name: 'Clue website',
-            technologies: ['TypeScript', 'React', 'Gatsby'],
+            name: 'Video Streaming App',
+            technologies: ['TypeScript'],
             position: 'Frontend',
-            description: `I maintained and added features to a helloclue.com,
-              an encyclopedia website for Period and Cycle tracking app.
-              It consists of thousands of articles from Contentful, supports 5 languages
-              and allows web payment.`
+            description: `My work involved developing and optimizing a video streaming app for TVs,
+             ensuring a high-quality experience for 30 million monthly active users across a range of devices.
+              `
           }]
         },
         {
           date: {
             from: '2021.12',
-            to: '2022.08'
+            to: '2022.02'
           },
           positions: ['Senior Software Engineer'],
           company: 'Deloitte',
