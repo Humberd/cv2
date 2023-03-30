@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './technologies.scss';
 import { UnbreakableList } from '../unbreakableList';
+import { pseudoMarkdownToReact } from '../utils';
 
 export interface TechnologiesProps {
   entries: TechnologyEntryProps[];
@@ -29,7 +30,7 @@ export const TechnologyEntry = (props: TechnologyEntryProps) => (
     >
       {props.technologies.map((it, index) => (
         <li className="technology" key={it}>
-          {it}
+          {pseudoMarkdownToReact(it)}
           {index < props.technologies.length - 1 ? ',' : ''}
         </li>
       ))}

@@ -101,11 +101,11 @@ const HeaderSegment = () => (
       name: 'Maciej Sawicki',
       downloadUrl:
         'https://github.com/Humberd/resume/raw/gh-pages/Maciej%20Sawicki%20-%20Resume.pdf',
-      profession: 'Senior Frontend Engineer',
-      description: `I'm an experienced engineer, who specializes in frontend development.
+      profession: 'Senior Fullstack Engineer',
+      description: `I'm an experienced Senior FullStack Engineer with Java and React, who specializes in frontend development.
       I am fluent with both JavaScript and Typescript. I worked with a variety of technologies,
       the most notable being React, React Native and Angular. I worked on a variety of projects,
-      both large and small, in some of which I expanded my knowledge of backend development in Java and Node.js.
+      both large and small, in some of which I used my knowledge of backend development in Java and Node.js.
       It makes me an ideal candidate to make a job done, regardless of the technology.
       `,
     }}
@@ -162,10 +162,10 @@ const TechnologiesSegment = () => (
         {
           title: 'Frontend',
           technologies: [
+            '**React**',
+            'React Native',
             'Angular',
             'AngularJS',
-            'React',
-            'React Native',
             'RxJS',
             'Redux',
             'JavaScript',
@@ -178,11 +178,11 @@ const TechnologiesSegment = () => (
         {
           title: 'Backend',
           technologies: [
+            '**Java**',
+            'Kotlin',
             'Spring',
             'Node.js',
             'RxJava',
-            'Java',
-            'Kotlin',
             'JavaScript',
             'TypeScript',
           ],
@@ -252,9 +252,16 @@ const WorkHistorySegment = () => (
             from: '2022.08',
             to: 'current',
           },
-          positions: ['Senior Frontend Engineer'],
+          positions: ['Senior Fullstack Engineer'],
           company: 'BioWink GmbH',
           projects: [
+            {
+              name: 'Payment microservice',
+              technologies: ['Kotlin', 'Java', 'Spring'],
+              position: 'Backend',
+              description: `Designed and created a microservice responsible for handling web payments, 
+            which was integrating with Paddle payment processing platform.`,
+            },
             {
               name: 'Clue website',
               technologies: ['TypeScript', 'React', 'Gatsby'],
@@ -271,12 +278,12 @@ const WorkHistorySegment = () => (
             from: '2021.12',
             to: '2022.07',
           },
-          positions: ['Senior Software Engineer'],
+          positions: ['Senior Fullstack Engineer'],
           company: 'Deloitte',
           projects: [
             {
               name: 'Call Center',
-              technologies: ['TypeScript', 'React', 'Twilio'],
+              technologies: ['TypeScript', 'React', 'Twilio', 'Java'],
               position: 'Frontend and Backend',
               description: `I was responsible for implementing features in a Twilio-based software 
               for handling and automating phone calls.

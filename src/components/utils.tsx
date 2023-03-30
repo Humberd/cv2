@@ -24,7 +24,11 @@ export function pseudoMarkdownToReact(value: string): React.ReactNode[] {
       return <span key={index}>{piece}</span>;
     }
 
-    return <strong key={index}>{piece}</strong>;
+    return (
+      <strong style={{ fontWeight: 600 }} key={index}>
+        {piece}
+      </strong>
+    );
   });
 }
 
